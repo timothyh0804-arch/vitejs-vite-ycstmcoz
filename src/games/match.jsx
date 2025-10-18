@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function Match() {
+export default function Match({ setPt }) {
   let [cardInfo, resetCardInfo] = useState([
     { word: "Hola", num: 1 },
     { word: "Hello", num: 1 },
@@ -73,6 +73,8 @@ export default function Match() {
 
     resetClick(new Array(32).fill(0));
     resetCorrect(0);
+
+    setPt((pt) => pt + 1);
   }
 
   function click(ind) {
