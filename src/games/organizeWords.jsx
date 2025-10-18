@@ -1,78 +1,78 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-export default function imageGuessing() {
+export default function ImageGuessing() {
   let sentenceFrames = [
-    ['¿Puedes', 'ayudarme', 'a', 'encontrar', 'el', 'camino', 'correcto', '?'],
+    ["¿Puedes", "ayudarme", "a", "encontrar", "el", "camino", "correcto", "?"],
     [
-      'Me',
-      'gustaría',
-      'reservar',
-      'una',
-      'mesa',
-      'para',
-      'cuatro',
-      'personas',
-      '.',
+      "Me",
+      "gustaría",
+      "reservar",
+      "una",
+      "mesa",
+      "para",
+      "cuatro",
+      "personas",
+      ".",
     ],
-    ['¿A', 'qué', 'hora', 'sale', 'el', 'próximo', 'tren', 'mañana', '?'],
-    ['Lo', 'siento,', 'no', 'entiendo', 'bien', 'lo', 'que', 'dijiste', '.'],
+    ["¿A", "qué", "hora", "sale", "el", "próximo", "tren", "mañana", "?"],
+    ["Lo", "siento,", "no", "entiendo", "bien", "lo", "que", "dijiste", "."],
     [
-      '¿Podrías',
-      'repetirlo',
-      'un',
-      'poco',
-      'más',
-      'despacio,',
-      'por',
-      'favor',
-      '?',
+      "¿Podrías",
+      "repetirlo",
+      "un",
+      "poco",
+      "más",
+      "despacio,",
+      "por",
+      "favor",
+      "?",
     ],
-    ['Quiero', 'comprar', 'un', 'boleto', 'de', 'ida', 'y', 'vuelta', '.'],
+    ["Quiero", "comprar", "un", "boleto", "de", "ida", "y", "vuelta", "."],
     [
-      'Hace',
-      'mucho',
-      'calor',
-      'hoy,',
-      'prefiero',
-      'quedarme',
-      'en',
-      'casa',
-      '.',
-    ],
-    [
-      '¿Dónde',
-      'está',
-      'la',
-      'estación',
-      'principal',
-      'de',
-      'autobuses',
-      'aquí',
-      '?',
+      "Hace",
+      "mucho",
+      "calor",
+      "hoy,",
+      "prefiero",
+      "quedarme",
+      "en",
+      "casa",
+      ".",
     ],
     [
-      'Necesito',
-      'llamar',
-      'a',
-      'un',
-      'taxi',
-      'para',
-      'ir',
-      'al',
-      'aeropuerto',
-      '.',
+      "¿Dónde",
+      "está",
+      "la",
+      "estación",
+      "principal",
+      "de",
+      "autobuses",
+      "aquí",
+      "?",
     ],
     [
-      'El',
-      'supermercado',
-      'más',
-      'cercano',
-      'está',
-      'a',
-      'cinco',
-      'minutos',
-      'caminando',
-      '.',
+      "Necesito",
+      "llamar",
+      "a",
+      "un",
+      "taxi",
+      "para",
+      "ir",
+      "al",
+      "aeropuerto",
+      ".",
+    ],
+    [
+      "El",
+      "supermercado",
+      "más",
+      "cercano",
+      "está",
+      "a",
+      "cinco",
+      "minutos",
+      "caminando",
+      ".",
     ],
   ];
 
@@ -109,10 +109,10 @@ export default function imageGuessing() {
       style={{
         backgroundColor:
           correctAnswer[i] === 2
-            ? '#6F0'
+            ? "#6F0"
             : correctAnswer[i] === 1
-            ? '#F00'
-            : 'fcd344',
+            ? "#F00"
+            : "fcd344",
       }}
     >
       {v}
@@ -215,9 +215,7 @@ export default function imageGuessing() {
       <br />
       <div>{buttons}</div>
       <br />
-      <div>
-        ---------------------------------------------------------------------------------------------------
-      </div>
+      <div className="border border-dashed"></div>
       <br />
       <div>{buttonsAnswer}</div>
       <br />
