@@ -1,3 +1,5 @@
 ```
 pnpm dev
 ```
+
+in terminal
